@@ -1,0 +1,64 @@
+doronbruder
+
+204917629
+
+Doron Bruder
+
+ Websites:"stackoverflow,youtube,wikipadia"
+
+No special comments
+
+Sodoku function:
+
+My logic trough the solution
+ was to split it  into these functions : 
+
+A ‪ function finds the next empty-non zero place
+ in the board‬ if there is it returns true else it returns false 
+
+I built few different functions to check if the 
+current place in the board is valid to put a
+ particular number in it- according to the sudoku game rules 
+
+The first function from this kind  checks if
+ the number in the current place exists twice or more in the same row
+
+The second  checks if the number in the 
+current place exists twice or more in the same column
+
+And the third  function checks if the 
+current place is passed sub-board 
+rule which means it is the only value of its kind in  its sub board
+
+I used these three function together 
+ to create a main function to check if the current place is valid 
+
+After finish to build these helper 
+functions I create the main function
+ that actually solve a general board sudoku game 
+
+   This function is boolean function checks 
+if a general N*N board sudoku game is
+ solvable and if it is ,it solves it in this way:
+     If there is no empty(zero) location, we are done==>
+==> else  consider digits 1 to N for the first empty location 
+‪      ‬==>‪ if it's valid so far‬ go to next 
+recursive call fo the next empty cell
+ ,if in some point it's not valid so back track
+
+
+In addition the file contain the following functions :
+
+    A function that prints all subsets with size k of the group 0...,n-1
+
+    A function that returns list with all subsets 
+with size k of the group 0...,n-1 as lists without taking any lists parameters
+
+    A function that fills an empty list with all
+ subsets with size k of the group 0...,n-1 as lists and return nothing
+
+
+
+
+
+ 
